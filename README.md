@@ -32,6 +32,10 @@ contagem de pontos, geração de gráficos, divulgaçaão de noticias, "sala de 
 
 <img src="Exemplo_home.png" alt="Exemplo da home">
 
+<img src="Exemplo_pontuacoes.png" alt="Exemplo da pontuação">
+
+<img src="Exemplo_historico.png" alt="Exemplo do historico">
+
 ###  Linguagens usadas no website: 🖥️
 - HTML Versão 5
 - CSS Versão 3
