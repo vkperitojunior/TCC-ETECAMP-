@@ -1,9 +1,9 @@
-# Trabalho de conclusão de curso - SPF
+# Trabalho de conclusão de curso - Sistema Paulo Freire ou SPF
 
-Bem-vindo(a) ao **TCC PF Sports**!, aqui você irá encontrar um trabalho de conclusão de curso feito durante o 3º ano do ensino médio integrado ao técnico em informática para internet
-da Escola Técnica de Campo Limpo Paulista, 
+Bem-vindo(a) ao **TCC SPF**!, aqui você irá encontrar um trabalho de conclusão de curso feito durante o 3º ano do ensino médio integrado ao técnico em informática para internet
+da Escola Técnica Estadual de Campo Limpo Paulista (ETECAMP), 
 
-Grupo de Trabalho:
+Grupo do Trabalho:
 Vinicius Kum
 Nycollas Feriotto Dias
 Mateus Araujo da Silva
@@ -24,9 +24,47 @@ Nesta semana temos competições por pontos em gincanas e outras brincadeiras qu
 recebe uma quantidade de pontos que vem de jurados de fora da escola, para que os pontos não fiquem inviesados, assim, todos temos garra para participar e competir olhando para nossa educação, colegas 
 e o mais importante, diferentes jeitos de aprendizado!
 
-Porém, com algumas conversas e entrvistas breves, foi notado que muitas das pesssoas tinham duvidas durante a semana, o gráfico de pontos era dificil e demorado para ser gerado, a memoria dos vencedores
-constantemente ficava para trás! e as noticias de certa forma não cehgavam bem ate o destino por meio de whatsapp então resolvemos, por decisão unanime, construir uma aplicação para facilitar a 
-contagem de pontos, geração de gráficos, noticias em primeira mão, "sala de trofeús digital" e outras áreas de interesse dos docentes e alunos.
+Porém, com a aplicação de entrevistas e questionários, foi notado que muitas das pesssoas tinham duvidas durante a semana, a tabela de pontos era dificil e demorado para ser gerada, a memoria dos vencedores
+constantemente ficava para trás! e as noticias de certa forma não chegavam a maioria dos destino por meio de whatsapp então sentiu-se a nescessidade de construir uma sistema digital completo para facilitar a 
+contagem de pontos, geração de gráficos, divulgaçaão de noticias, "sala de trofeús digital" e outras áreas de interesse dos docentes e alunos.
+
+
+
+###  Linguagens usadas no website: 🖥️
+- HTML Versão 5
+- CSS Versão 3
+- PHP Versão 8.1.30
+- JAVASCRIPT Versão ECMAScript 2023
+
+-> EXTENSÕES/PACOTES:
+
+- PhpMailer Versão 6.9.1
+- PSR-4_Autoloader
+- SimpleXLXSGEN
+- DomPDF
+- Composer
+- AltoRouter
+- GEOIP2-php
+- PHPLOT
+- PHPOFFICE
+- Maxmind geolite2
+
+###  Linguagens usadas no aplicativo: 📱
+
+- HTML Versão 5
+- CSS Versão 3
+- Node.js Versão 20.17
+- NPM Versão 10.8.3
+- Ionic Versão 7.2
+
+-> EXTENSÕES/PACOTES:
+
+- Firebase Versão 13.19.0
+- Chart Versão 4.4.4
+
+###  Linguagens usadas no dedurator: 🕹️
+
+- C++ no Arduino IDE Versão 2.3.3
 
 ## Etapas para término do processo de construção do Artigo: ✔️
 
@@ -34,9 +72,17 @@ contagem de pontos, geração de gráficos, noticias em primeira mão, "sala de 
 - Pesquisa de campo e entrevistas.
 - Prototipos, design, começo do manual da marca.
 - Manual da marca e criação visual.
-- Criação do website e dos códigos QR.
+- Criação do website e aplicativo.
+- Construção do ssistema eletronico para competições com botões.
 - Teste de campo do site e acessibilidade do mesmo.
+- Apresentação do TCC à banca.
+- Apresentação do TCC na feira tecnologica.
 - Implementação na ETECAMP.
-- Manutenção. 
+- Manutenção do sistema.
 
-copyright@2024 - Todos os direitos reservados aos donos deste artigo cientifico, consulte os mesmos antes de alterações e cópias.
+###  Como citar este trabalho: ⌨️🖱️
+
+DA SILVA, Matheus Araújo; DIAS, Nycollas Feriotto;KUM, Vinicius. Desenvolvimento de um sistema web para auxiliar na organização da semana Paulo freire. 2024. 30 p.
+
+
+Copyright @ 2024 Todos os direitos reservados aos autores.
