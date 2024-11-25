@@ -28,7 +28,7 @@ Porém, com a aplicação de entrevistas e questionários, foi notado que muitas
 constantemente ficava para trás! e as noticias de certa forma não chegavam a maioria dos destino por meio de whatsapp então sentiu-se a nescessidade de construir uma sistema digital completo para facilitar a 
 contagem de pontos, geração de gráficos, divulgaçaão de noticias, "sala de trofeús digital" e outras áreas de interesse dos docentes e alunos.
 
-
+![image]()
 
 ###  Linguagens usadas no website: 🖥️
 - HTML Versão 5
