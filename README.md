@@ -140,6 +140,9 @@ Alterações e Funcionando
 
 4 - Abrir terminal do Visual Studio Code, no CMD do terminal integrado digitar "ionic serve", vai abrir uma página no navegador.
 
+<img src="Exemplo_aplicativo1.png" alt="Exemplo do aplicativo 1">
+<img src="Exemplo_aplicativo2.png" alt="Exemplo do aplicativo 2">
+
 ###  Executando o sistema eletronico: 🕹️
 
 Compre os materiais nescessários e construa o sistema: 
