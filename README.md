@@ -1,4 +1,4 @@
-# Trabalho de conclusão de curso - PF Sports
+# Trabalho de conclusão de curso - SPF
 
 Bem-vindo(a) ao **TCC PF Sports**!, aqui você irá encontrar um trabalho de conclusão de curso feito durante o 3º ano do ensino médio integrado ao técnico em informática para internet
 da Escola Técnica de Campo Limpo Paulista, 
