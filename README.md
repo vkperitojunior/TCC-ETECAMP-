@@ -86,9 +86,9 @@ contagem de pontos, geração de gráficos, divulgaçaão de noticias, "sala de 
 - Implementação na ETECAMP.
 - Manutenção do sistema.
 
-## Como executar esse trabalho: 
+## Como executar esse trabalho: 🧰
 
-###  Linguagens usadas no website: 🖥️
+###  Executando o website: 🖥️
 
 Instalar as dependencias e aplicaitivos
 
@@ -123,17 +123,96 @@ http://localhost/spf.com
 ou 
 http://<seu_ip>/spf.com
 
-###  Linguagens usadas no aplicativo: 📱
+###  Executando o aplicativo: 📱
 
-1 - Entre no link para instalar o node.js 
+IMPORTANTE: Fazer o passo de instalação do site (O aplicativo funciona conectado no site), ou seja, instalar XAMPP, Visual Studio Code. Colocar site no LocalHost gerado pelo Xampp, conectar Banco de Dados, etc.
 
-###  Linguagens usadas no dedurator: 🕹️
+Instalação dependências específicas do Aplicativo
 
-1-
+1 - Instalar Node e npm na URL: https://nodejs.org/pt/download/package-manager
+2 - Instalar Ionic na URL: https://ionicframework.com/docs/intro/cli
+
+
+Alterações e Funcionando
+
+3 - Abrir VSC -> src/app/services/api.service.ts  -> Alterar para o IP da internet (O aplicativo roda utilizando o IP, que busca informações no site dentro do local host, e o site busca informações no Banco de Dados). Para saber o IP que está conectado o computador, digitar CMD na barra de pesquisa do Windows, e nele digitar "ipconfig". Utilizar o IP do "Endereço IPv4". e alterar na linha: "  private apiUrl = 'http://192.168.12.167/spf.com/backend/conexao/script/api.php';
+"
+
+4 - Abrir terminal do Visual Studio Code, no CMD do terminal integrado digitar "ionic serve", vai abrir uma página no navegador.
+
+###  Executando o sistema eletronico: 🕹️
+
+Compre os materiais nescessários e construa o sistema: 
+
+- 10x botoes de arcade.
+- 12x metros de fio de rede.
+- 11x leds de alto brilho com cores diferentes.
+- 1x Caixinha para 4 pilhas.
+- 1x Adptador de 12v para 3.3 ou 5 Volts.
+- 1x esp 32 wroom.
+- Jumpers diversos.
+- 1x buzzer ativo.
+- 5x leds RGB de 4 pinos ou 1 fita de 15cm RGB.
+- 1x protoboard ou placa universal.
+- 1x caixa de plastico de 10cm x 30cm no minimo para o sistema.
+- 10x caixas de plastico de 10cm x 10cm no minimo para os botoes.
+- 10x conectores BNC femea.
+- 10x conectores BNC macho.
+- 4x pilhas AA.
+- 1x alavanca ou botão de ON/OFF de 2 polos.
+- 10x resistores de 470 Ohms.
+- 10x resistores de 1 K Ohm.
+- 3x resistores de 510 ohms.
+- 16x capas para led de 3mm.
+
+Estimativa de preço com base nos preços de 2024 sem responsabilidades:
+350,00 R$ 💵
+
+Montagem do sistema:
+
+1 - Corte os cabos de rede, dez cabos de 1 metro cada.
+
+2 - Tire os pequenos fios que sobraram dos 2 metros de cabo de rede restantes.
+
+4 - Pegue a maior caixa, instale como preferir os itens abaixo dentro dela, usando cola quente, super cola ou parafusos.
+Esp 32 WROOM, Protoboard, 10 conectores BNC Femea, adaptor de energia de 12v para 3.3 ou 5 volts, buzzer, 10 leds para botoes, 1 led para memoria, 1 buzzer, 1 fita led ou 5 leds rgb de 4 pinos e 
+a depender da quantidade de leds, instale as capas, lembrando que alguns itens serão instalados "saindo da caixa" e outros dentro da caixa, conforme ultima imagem dessa instrução!
+
+5 - Pegue as 10 caixas para botoes, instale um botão em cada uma desas caixas, pegue os 10 pedaços de 1 metro de fio e solde um pedaco de 1 metro em cada um dos 10 kits caixa/botão, ao final da 
+solda, instale um conector bnc macho em cada uma das pontas dos 10 kits botão/caixa/fio.
+
+6 - Volte na caixa maior, solde um fio entre a caixa de pilhas e o botão ON/OFF.
+7 - Solde um fio entre o botão ON/OFF e a entrada vin e gnd do esp 32 wroom.
+8 - Solde um fio do buzer na saida do buzzer do esp.
+9 - Solde um fio do led de memoria na saida do led de memoria do esp.
+10 - Solde um fio do gnd do esp no gnd da fita led.
+11 - Solde um fio de cada cor RGB da fita led, em cada saida RGB do esp.
+12 - Solde um fio para cada 1 dos 10 leds dos botoes para um pino do esp.
+13 - Solde um fio para cada 1 das 10 saidas dos botoes para um pino do esp.
+
+<img src="Exemplo_home.png" alt="Exemplo do dedurator">
+
+Carregamento do sistema:
+
+6 - Baixe o arduino IDE no link a seguir: https://www.arduino.cc/en/software
+(Baixa o pacote base para seu sistema e siga os passos de instalação)
+
+7 - Baixe o driver do esp 32 no link a seguir: 
+CH340: https://sparks.gogo.co.nz/ch340.html?srsltid=AfmBOoppX-ReGhvhHV8y4dTSor9iT5ir7fm6aNigdJ5URheVdsjGk-Zg
+CP210X: https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers
+
+8 - Instale as preferencias e configurações do esp 32 no arduino ide: https://embarcados.com.br/como-programar-o-esp32-na-arduino-ide/
+
+9 - abra o codigo do dedurator no arduino ide, conecte a placa no esp 32, verifique se esta tudo correto e carregue o programa.
+
+Uso do sistema:
+
+1 - Inicie o sistema atraves da chave ON/OFF, e aguarde a musica de inicio acabar! Pronto, agora é só iniciar o jogo e o sistema sempre ira dedurar quem apertou primeiro o botão de resposta!
 
 ##  Como citar este trabalho: ⌨️🖱️
 
 DA SILVA, Matheus Araújo; DIAS, Nycollas Feriotto;KUM, Vinicius. Desenvolvimento de um sistema web para auxiliar na organização da semana Paulo freire. 2024. 30 p.
 
+### Em caso de duvidas entre em contato com codnicius@gmail.com ou com feriottodias@gmail.com
 
-Copyright @ 2024 Todos os direitos reservados aos autores.
+#### Copyright @ 2024 Todos os direitos reservados aos autores.
