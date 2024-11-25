@@ -86,7 +86,52 @@ contagem de pontos, geração de gráficos, divulgaçaão de noticias, "sala de 
 - Implementação na ETECAMP.
 - Manutenção do sistema.
 
-###  Como citar este trabalho: ⌨️🖱️
+## Como executar esse trabalho: 
+
+###  Linguagens usadas no website: 🖥️
+
+Instalar as dependencias e aplicaitivos
+
+1 - Entre no link a seguir para baixar o Visual Studio Code: https://code.visualstudio.com/
+(Baixa o pacote base para seu sistema e siga os passos de instalação)
+
+2 - Entre no link para instalar o xampp: https://www.apachefriends.org/pt_br/download.html
+(Baixa o pacote base para seu sistema e siga os passos de instalação)
+
+Carregar a base de dados e configurar o email do website
+
+1 - Entre no seu explorar de arquivos, vá em este computador, entre em seu hd principal, entre em xampp, entre em htdocs, baixe o arquivo do website spf e descompacte ele aqui dentro. 
+
+2 - Abra o seu control panel do xampp e ative o MySQL e Apache, clique em admin do MySQL.
+
+3 - Após abrir o phpmyadmin em seu navegador, clique em +novo, em nome do banco de dados coloque bd_spf, clique em criar, vá na aba de importar, escolher um arquivo e agora
+vá ate seu htdocs novamente, entre na pasta do spf.com, backend -> conexao -> sql -> bd_spf -> bd_spf.sql e pronto!
+
+4 - Após abrir o phpmyadmin em seu navegador, clique em +novo, em nome do banco de dados coloque bd_logs_spf, clique em criar, vá na aba de importar, escolher um arquivo e agora
+vá ate seu htdocs novamente, entre na pasta do spf.com, backend -> conexao -> sql -> bd_logs_spf -> bd_logs_spf.sql e pronto!
+
+5 - Abra o visual studio code, clique em arquivo, clique em abrir pasta, procure pela pasta do spf.com no seu htdocs, abra ela, entre em backend -> form_p_adm -> invite_email.php -> troque as linhas 
+119, 120, 121 e 123 do codigo por seu email, nome do remetente, identificador do remetente, senha, email do destinatario e nome do destinatario nesta ordem.
+
+6 - Entre em backend -> perfil_usuarios -> alterar_perfil.php -> troque as linhas 514, 515, 516, por seu email, senha, nome do remetente e identificador do remetente nesta ordem.
+
+Iniciar o site e abrir ele no navegador
+
+1 - Abra o navegador de sua preferencia, e digite na barra de pesquisa: 
+
+http://localhost/spf.com
+ou 
+http://<seu_ip>/spf.com
+
+###  Linguagens usadas no aplicativo: 📱
+
+1 - Entre no link para instalar o node.js 
+
+###  Linguagens usadas no dedurator: 🕹️
+
+1-
+
+##  Como citar este trabalho: ⌨️🖱️
 
 DA SILVA, Matheus Araújo; DIAS, Nycollas Feriotto;KUM, Vinicius. Desenvolvimento de um sistema web para auxiliar na organização da semana Paulo freire. 2024. 30 p.
 
