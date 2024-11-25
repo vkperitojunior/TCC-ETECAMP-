@@ -30,11 +30,11 @@ contagem de pontos, geração de gráficos, divulgaçaão de noticias, "sala de 
 
 ## Algumas imagens para demonstrar o site: 🎞️
 
-<img src="Exemplo_home.png" alt="Exemplo da home">
+<img src="Imagens_Readme/Exemplo_home.png" alt="Exemplo da home">
 
-<img src="Exemplo_pontuacoes.png" alt="Exemplo da pontuação">
+<img src="Imagens_Readme/Exemplo_pontuacoes.png" alt="Exemplo da pontuação">
 
-<img src="Exemplo_historico.png" alt="Exemplo do historico">
+<img src="Imagens_Readme/Exemplo_historico.png" alt="Exemplo do historico">
 
 ###  Linguagens usadas no website: 🖥️
 - HTML Versão 5
@@ -140,8 +140,8 @@ Alterações e Funcionando
 
 4 - Abrir terminal do Visual Studio Code, no CMD do terminal integrado digitar "ionic serve", vai abrir uma página no navegador.
 
-<img src="Exemplo_aplicativo1.jpg" alt="Exemplo do aplicativo 1">
-<img src="Exemplo_aplicativo2.jpg" alt="Exemplo do aplicativo 2">
+<img src="Imagens_Readme/Exemplo_aplicativo1.jpg" alt="Exemplo do aplicativo 1">
+<img src="Imagens_Readme/Exemplo_aplicativo2.jpg" alt="Exemplo do aplicativo 2">
 
 ###  Executando o sistema eletronico: 🕹️
 
@@ -193,8 +193,8 @@ solda, instale um conector bnc macho em cada uma das pontas dos 10 kits botão/c
 12 - Solde um fio para cada 1 dos 10 leds dos botoes para um pino do esp.
 13 - Solde um fio para cada 1 das 10 saidas dos botoes para um pino do esp.
 
-<img src="Exemplo_fisico_dedurator.jpg" alt="Exemplo da caixa fisica do dedurator">
-<img src="Exemplo_dedurator.png" alt="Exemplo do dedurator">
+<img src="Imagens_Readme/Exemplo_fisico_dedurator.jpg" alt="Exemplo da caixa fisica do dedurator">
+<img src="Imagens_Readme/Exemplo_dedurator.png" alt="Exemplo do dedurator">
 
 Carregamento do sistema:
 
