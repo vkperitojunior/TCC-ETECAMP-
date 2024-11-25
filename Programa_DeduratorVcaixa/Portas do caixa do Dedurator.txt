@@ -1,0 +1,9 @@
+// Definições dos pinos
+const int pinosBotoes[] = {2, 4, 5, 12, 13, 14, 15, 16, 17, 18}; // Pinos dos botões
+const int pinosLedsPisca[] = {19, 21, 22}; // Pinos dos LEDs piscantes (RGB: 3 cores)
+const int pinosLedsAcoes[] = {25, 26, 27, 32, 33, 34, 35, 36, 23, 1}; // Pinos dos LEDs para cada botão
+const int pinoBuzzer = 39; // Pino do buzzer
+const int pinoLedMemoria = 3; // Pino do LED de memória (acende durante a contagem)
+
+laranja e branco-verde -> positivo
+verde -> negativo
