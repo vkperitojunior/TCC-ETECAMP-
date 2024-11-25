@@ -211,7 +211,7 @@ Uso do sistema:
 
 ##  Como citar este trabalho: ⌨️🖱️
 
-DA SILVA, Matheus Araújo; DIAS, Nycollas Feriotto;KUM, Vinicius. Desenvolvimento de um sistema web para auxiliar na organização da semana Paulo freire. 2024. 30 p.
+DA SILVA, Matheus Araújo; DIAS, Nycollas Feriotto; KUM, Vinicius. Desenvolvimento de um sistema web para auxiliar na organização da semana Paulo freire. 2024. 30 p.
 
 ### Em caso de duvidas entre em contato com codnicius@gmail.com ou com feriottodias@gmail.com
 
