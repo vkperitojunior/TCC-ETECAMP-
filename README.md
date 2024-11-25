@@ -4,12 +4,12 @@ Bem-vindo(a) ao **TCC SPF**!, aqui você irá encontrar um trabalho de conclusã
 da Escola Técnica Estadual de Campo Limpo Paulista (ETECAMP), 
 
 Grupo do Trabalho:
-Vinicius Kum
-Nycollas Feriotto Dias
-Mateus Araujo da Silva
+Vinicius Kum,
+Nycollas Feriotto Dias e
+Mateus Araujo da Silva.
 
 Orientadores:
-Thaynara Andrade
+Thaynara Andrade e
 Barbara porphirio
 
 ## Como começamos e qual nosso objetivo: ☕️
