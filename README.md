@@ -194,16 +194,16 @@ solda, instale um conector bnc macho em cada uma das pontas dos 10 kits botão/c
 
 Carregamento do sistema:
 
-6 - Baixe o arduino IDE no link a seguir: https://www.arduino.cc/en/software
+1 - Baixe o arduino IDE no link a seguir: https://www.arduino.cc/en/software
 (Baixa o pacote base para seu sistema e siga os passos de instalação)
 
-7 - Baixe o driver do esp 32 no link a seguir: 
+2 - Baixe o driver do esp 32 no link a seguir: 
 CH340: https://sparks.gogo.co.nz/ch340.html?srsltid=AfmBOoppX-ReGhvhHV8y4dTSor9iT5ir7fm6aNigdJ5URheVdsjGk-Zg
 CP210X: https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers
 
-8 - Instale as preferencias e configurações do esp 32 no arduino ide: https://embarcados.com.br/como-programar-o-esp32-na-arduino-ide/
+3 - Instale as preferencias e configurações do esp 32 no arduino ide: https://embarcados.com.br/como-programar-o-esp32-na-arduino-ide/
 
-9 - abra o codigo do dedurator no arduino ide, conecte a placa no esp 32, verifique se esta tudo correto e carregue o programa.
+4 - abra o codigo do dedurator no arduino ide, conecte a placa no esp 32, verifique se esta tudo correto e carregue o programa.
 
 Uso do sistema:
 
