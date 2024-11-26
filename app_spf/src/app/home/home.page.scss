@@ -1,0 +1,398 @@
+:root {
+  --ion-color-primary: #1e90ff;
+  --ion-color-secondary: #444;
+  --ion-color-tertiary: #666;
+  --ion-background-color: #000000;
+  --ion-abrirEvoltar-color: #1e90ff;
+  --ion-text-color: #ffffff;
+  --ion-card-background: #444;
+  --ion-card-header-background: #1e90ff;
+  --ion-card-header-text-color: #ffffff;
+  --ion-toolbar-background: #222;
+  --ion-toolbar-text-color: #e0e0e0;
+  --ion-intro-text-text-color: #ffffff;
+  --ion-button-background: #1e90ff;
+  --ion-button-color: #ffffff;
+  --ion-button-hover-background: #1c86ee;
+  --intro-card-text-color: #ffffff;
+  --intro-title-color: #ffffff;
+  --ion-toolbar-background2: #333;
+  --icon-color: #ffffff;
+  --button-background: #1e90ff;
+}
+
+[data-theme='dark'] {
+  --ion-color-primary: #1e90ff;
+  --ion-color-secondary: #ff6347;
+  --ion-color-tertiary: #32cd32;
+  --ion-background-color: #dbdbdb;
+  --ion-abrirEvoltar-color: #ffffff;
+  --ion-text-color: #333333;
+  --ion-card-background: #ffffff;
+  --ion-card-header-background: #1e90ff;
+  --ion-card-header-text-color: #333;
+  --ion-toolbar-background: #1e90ff;
+  --ion-toolbar-text-color: #ffffff;
+  --ion-intro-text-text-color: #000000;
+  --ion-button-background: #1e90ff;
+  --ion-button-color: #ffffff;
+  --ion-button-hover-background: #1c86ee;
+  --intro-card-text-color: #333;
+  --intro-title-color: #000000;
+  --ion-toolbar-background2: #ff0000;
+  --icon-color: #333333;
+  --button-background: #333333;
+}
+
+#main-content {
+  background-color: var(--button-background);
+  transition: background-color 0.5s ease;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.abrirEvoltar {
+  color: var(--ion-text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+ion-menu {
+  transition: transform 0.4s cubic-bezier(0.25, 1.5, 0.5, 1), opacity 0.4s ease;
+}
+
+ion-menu[hidden] {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+ion-menu[open] {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+ion-menu::part(backdrop) {
+  background-color: rgb(50, 153, 255);
+  transition: background-color 0.3s ease;
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0px 14px rgb(15, 183, 255);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.toggle-container {
+  margin-bottom: 20px;
+}
+
+.dark-mode-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--ion-button-background);
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ion-button-background);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: rgba(4, 129, 255, 0.1);
+    transform: scale(1.05);
+  }
+}
+
+.dark-mode-text {
+  color: rgb(0, 0, 0);
+}
+
+.light-mode-text {
+  color: rgb(255, 255, 255);
+}
+
+.navigate-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navigate-link {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  background: var(--ion-button-background);
+  color: var(--ion-button-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--ion-button-hover-background);
+    transform: scale(1.02);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.toggle-switch {
+  width: 50px;
+  height: 25px;
+  background-color: #999999;
+  border-radius: 25px;
+  position: relative;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+
+  &.active {
+    background-color: #007bff;
+  }
+
+  .switch-circle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  &.active .switch-circle {
+    transform: translateX(25px);
+  }
+}
+
+.mode-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+  margin-left: 12px;
+
+  .dark-mode-button:hover & {
+    color: #007bff;
+  }
+}
+
+.header-image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.toolbar {
+  --background: var(--ion-toolbar-background);
+  --color: var(--ion-toolbar-text-color);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.889);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.intro-text {
+  --color: var(--ion-intro-text-text-color);
+}
+
+.content {
+  background: var(--ion-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.background {
+  --background: var(--ion-toolbar-background2);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 960px;
+  width: 100%;
+}
+
+.intro-card {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background: var(--ion-card-background);
+  color: var(--intro-card-text-color);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animated-card {
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animated-card ion-card-header {
+  background: var(--ion-card-header-background);
+  color: var(--ion-card-header-text-color);
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #00aaff, #005f6b);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2), inset 0px 1px 3px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.scroll-to-top-button:hover {
+  background: linear-gradient(145deg, #005f6b, #00aaff);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px) scale(1.1);
+}
+
+.scroll-to-top-button:active {
+  animation: press-animation 0.2s ease-out;
+}
+
+@keyframes press-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tables {
+  margin-top: 20px;
+
+  .data-table {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: var(--ion-card-background);
+    transition: box-shadow 0.3s ease;
+
+    .chart-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+
+      canvas {
+        max-width: 100%; /* Garante que o gráfico não ultrapasse a largura do card */
+        height: 300px; /* Aumente a altura do gráfico para dar mais espaço */
+      }
+    }
+
+
+  
+    .score-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+
+      th, td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+
+        &:first-child {
+          font-weight: bold;
+        }
+      }
+
+      th {
+        text-align: center;
+        background-color: var(--ion-color-primary); /* Use a cor primária para o cabeçalho */
+        color: #ffffff; /* Texto branco para contraste */
+      }
+
+
+      tr:nth-child(even) {
+        background-color: rgba(83, 83, 83, 0.1); /* Fundo sutil para linhas pares */
+      }
+
+      tr:nth-child(odd) {
+        background-color: rgba(83, 83, 83, 0.1); /* Fundo sutil para linhas ímpares */
+      }
+
+      tr:hover {
+        background-color: rgba(130, 190, 255, 0.3); /* Efeito hover mais suave */
+      }
+    }
+  }
+
+  .data-table:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+
+
+
+
+  ion-grid {
+    padding: 10px;
+  }
+
+  ion-row {
+    margin-bottom: 10px;
+  }
+
+  ion-col {
+    --color: var(--ion-intro-text-text-color);
+    padding: 12px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  }
+}

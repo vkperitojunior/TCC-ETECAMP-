@@ -1,0 +1,286 @@
+<body>
+  <div class="content">
+
+
+    <div #topContent></div> 
+    <!-- Aqui é o elemento referência para ir para o topo da pag -->
+    
+    <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-buttons slot="start">
+          <ion-button (click)="closeMenu()">
+            <ion-icon name="close" style="color: var(--icon-color);"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title class="intro-text">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content>
+      <div class="menu-container">
+        <div class="toggle-container">
+          <button class="dark-mode-button" (click)="toggleDarkMode()">
+            <div class="toggle-switch" [ngClass]="{'active': DarkMode}">
+              <div class="switch-circle"></div>
+            </div>
+            <span class="mode-text">{{ modeText }}</span>
+          </button>
+        </div>
+        
+        <div class="navigate-container">
+          <ion-button expand="full" 
+          (click)="navigateToTarefas()" 
+                      class="navigate-button"
+                      fill="clear"
+                      [ngClass]="{'dark-mode-text': DarkMode, 'light-mode-text': !DarkMode}">
+            <strong>Ir para Tarefas</strong>
+          </ion-button>
+        </div>
+        
+      </div>
+      
+      <!-- Outros itens do menu -->
+    </ion-content>
+  </ion-menu>
+
+
+  <div class="content">
+    <ion-header>
+      <ion-toolbar class="toolbar">
+        <ion-title>Sistema PF</ion-title>
+        <ion-buttons slot="primary">
+          <ion-menu-button class="abrirEvoltar"></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    
+    
+  </div>
+  <div class="ion-page" id="main-content"> 
+    <!-- Conteúdo do botão ou da página aqui -->
+  </div>
+
+
+  
+  
+  
+  <div class="container" style="margin-bottom: 60px;">
+    
+    <div  class="header-image-container">
+      <ion-img src="https://mst.org.br/wp-content/uploads/2020/09/Paulo-Freire-desenho.jpg" class="header-image"></ion-img>
+    </div>
+
+    <ion-card class="intro-card">
+      <ion-card-header>
+        <ion-card-title class="intro-text">Bem-vindo ao Sistema PF</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          Este aplicativo é projetado para ajudar na organização e gerenciamento de dados importantes.
+          Navegue através das seções abaixo para acessar diferentes recursos e informações.
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="animated-card" style="margin-bottom: 5px;">
+      <ion-card-header>
+        <ion-card-title class="titulo">Selecionar Ano</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="background">
+        <ion-item class="background">
+          <ion-label>Ano</ion-label>
+          <ion-select [(ngModel)]="selectedYear" (ionChange)="fetchYearData()" interface="popover">
+            <ion-select-option *ngFor="let year of years" [value]="year">{{ year }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card style="margin-top: 2px; border: 1px solid rgb(255, 255, 255);" *ngIf="selectedTema" class="tema-card">
+      <ion-card-header>
+        <ion-card-title>{{ selectedTema.tema_tm }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="abrirEvoltar">Ano: {{ selectedTema.motivacao_tm }}</p>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card class="animated-card" style="margin-top: 2px; margin-bottom: 5px;">
+      <ion-card-header>
+        <ion-card-title>Selecionar Notícia</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="background">
+        <ion-item class="background">
+          <ion-label>Notícia</ion-label>
+          <ion-select [(ngModel)]="selectedNewsId" (ionChange)="updateSelectedNews()" interface="popover">
+            <ion-select-option *ngFor="let news of latestNews" [value]="news.id_not">{{ news.titulo_not }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card style="margin-top: 2px; border: 1px solid rgb(255, 255, 255);" *ngIf="selectedNews">
+      <ion-card-header>
+        <ion-card-title>{{ selectedNews.titulo_not }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="abrirEvoltar" style="margin-bottom: 20px;">Descrição: {{ selectedNews.descricao_not }}</p>
+        <p class="abrirEvoltar">Data: {{ selectedNews.data_not }}</p>
+      </ion-card-content>
+    </ion-card>
+    
+    
+    
+    
+    <ion-card class="animated-card" style="margin-bottom: 0.5px;">
+      <ion-card-header>
+        <ion-card-title>Tabelas de Dados</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item class="background">
+          <ion-label>Tabela de pontos por Equipes</ion-label>
+          <ion-button fill="outline" slot="end" (click)="toggleTable('equipes')">Ver</ion-button>
+        </ion-item>
+        <ion-item class="background">
+          <ion-label>Tabela de Locais e Horários</ion-label>
+          <ion-button fill="outline" slot="end" (click)="toggleTable('locais')">Ver</ion-button>
+        </ion-item>
+        <ion-item class="background">
+          <ion-label>Tabela de equipes</ion-label>
+          <ion-button fill="outline" slot="end" (click)="toggleTable('inf_equipes')">Ver</ion-button>
+        </ion-item>
+        <ion-item class="background">
+          <ion-label>Tabela de Organizadores e Avaliadores</ion-label>
+          <ion-button fill="outline" slot="end" (click)="toggleTable('organizadores')">Ver</ion-button>
+        </ion-item>
+
+      </ion-card-content>
+    </ion-card>
+    
+    <div class="tables" *ngIf="showTable === 'equipes'" #tabelaEquipes>
+      <ion-card class="data-table">
+        <ion-card-header>
+          <ion-card-title class="intro-text">Tabela de Pontuações por Equipe</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="chart-container">
+            <canvas #myChart></canvas>
+          </div>
+    
+          <!-- Tabela de Pontuações -->
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th>Equipe</th>
+                <th>Pontos Totais</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let ponto of pontuacoes">
+                <td class="abrirEvoltar">{{ getNomeEquipe(ponto.equipe_id) }}</td>
+                <td class="abrirEvoltar">{{ ponto.total_pontos }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    
+    
+    
+    <div class="tables" *ngIf="showTable === 'locais'" #tabelaLocais>
+      <ion-card class="data-table">
+        <ion-card-header>
+          <ion-card-title class="intro-text">Tabela de Locais e Horários</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <!-- Tabela de Locais e Horários -->
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th>Local</th>
+                <th>Data e Horário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let gincana of gincanas">
+                <td class="abrirEvoltar">{{ gincana.local_gin }}</td>
+                <td class="abrirEvoltar">{{ gincana.horario_gin }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    
+
+
+    <div class="tables" *ngIf="showTable === 'inf_equipes'" #tabelaGraficoPontos>
+      <ion-card class="data-table">
+        <ion-card-header>
+          <ion-card-title class="intro-text">Tabela de Equipes</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th>Nome da Equipe</th>
+                <th>Sala</th>
+                <th>Cor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let equipe of equipesDetalhadas">
+                <td class="abrirEvoltar">{{ equipe.nome_eq }}</td>
+                <td class="abrirEvoltar">{{ equipe.sala_eq }}</td>
+                <td class="abrirEvoltar">{{ equipe.cor_eq }}</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    
+    
+    <div class="tables" *ngIf="showTable === 'organizadores'" #tabelaOrganizadores>
+      <ion-card class="data-table">
+        <ion-card-header>
+          <ion-card-title class="intro-text">Tabela de Organizadores</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Função</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let organizador of organizadores">
+                <td class="abrirEvoltar">{{ organizador.nome_us }}</td>
+                <td class="abrirEvoltar">{{ organizador.funcao_no_evento }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    
+    
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Rodapé back top -->
+<ion-footer>
+  <button class="scroll-to-top-button" (click)="scrollToTop()">
+    &#8679; <!-- Código para uma seta para cima -->
+  </button>  
+</ion-footer>
+
+</body>
