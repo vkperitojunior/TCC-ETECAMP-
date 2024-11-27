@@ -42,6 +42,9 @@ contagem de pontos, geração de gráficos, divulgaçaão de noticias, "sala de 
 - PHP Versão 8.1.30
 - JAVASCRIPT Versão ECMAScript 2023
 
+Por conta do tamanho e da complexidade de carregar as extensões do site, preferimos relatar as versões e pedir
+ao usuário que baixasse e colocasse-as na pasta extensions para facilitar a execução do site.
+
 -> EXTENSÕES/PACOTES:
 
 - PhpMailer Versão 6.9.1
@@ -114,6 +117,23 @@ vá ate seu htdocs novamente, entre na pasta do spf.com, backend -> conexao -> s
 119, 120, 121 e 123 do codigo por seu email, nome do remetente, identificador do remetente, senha, email do destinatario e nome do destinatario nesta ordem.
 
 6 - Entre em backend -> perfil_usuarios -> alterar_perfil.php -> troque as linhas 514, 515, 516, por seu email, senha, nome do remetente e identificador do remetente nesta ordem.
+
+7 - Por conta do tamanho e da complexidade de carregar as extensões do site, preferimos relatar as versões e pedir
+ao usuário que baixasse e colocasse-as na pasta extensions para facilitar a execução do site.
+
+
+-> EXTENSÕES/PACOTES à baixar e colocar na pasta de extensions:
+
+- PhpMailer Versão 6.9.1
+- PSR-4_Autoloader
+- SimpleXLXSGEN
+- DomPDF
+- Composer
+- AltoRouter
+- GEOIP2-php
+- PHPLOT
+- PHPOFFICE
+- Maxmind geolite2
 
 Iniciar o site e abrir ele no navegador
 
