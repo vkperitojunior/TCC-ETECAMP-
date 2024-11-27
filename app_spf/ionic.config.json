@@ -1,7 +1,0 @@
-{
-  "name": "app_spf",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
