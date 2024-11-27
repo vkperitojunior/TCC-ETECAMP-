@@ -1,0 +1,26 @@
+.table{
+    margin-bottom: 7rem;
+    margin-top: 4rem;
+}
+
+h2{
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Lora", serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--second-text-color);
+    text-align: center;
+    margin-bottom: 2rem; 
+}
+
+h1{
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Lora", serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--second-text-color);
+    text-align: center;
+    margin-bottom: 4rem; 
+}

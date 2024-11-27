@@ -1,0 +1,38 @@
+h2{
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Lora", serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--second-text-color);
+    text-align: center;
+    margin-bottom: 20rem; 
+}
+
+h1{
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Lora", serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--second-text-color);
+    text-align: center;
+    margin-bottom: 5.5rem; 
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+   
+}
+
+.img-grafico img{
+   margin-bottom: 4rem;
+
+}
+
+.img-eficiencia img{
+   margin-bottom: 4rem;
+
+}
+

@@ -1,0 +1,150 @@
+section{
+
+    min-height: 100 vh;
+    padding: 10rem 9% 2rem;
+
+}
+
+
+.biografia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.biografia-img img{
+
+    margin-left: 8rem;
+    margin-top: 1.7rem;
+    width: 100%;
+}
+
+
+span{
+    color: var(--main-color);
+}
+
+
+
+.biografia-content h2{
+    text-align: left;
+    margin-top: 4rem;
+    /* font-family: "Bebas Neue", sans-serif; */
+     font-family: "Rubik", sans-serif;
+    /* font-family: "Lora", serif; */
+    /* font-family: "Poppins", sans-serif; */
+    font-size: 4.7rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--second-text-color);
+}
+
+.biografia-content p{
+    font-family: "Poppins", sans-serif;
+   font-size: 1.6rem;
+   text-align: justify;
+   color: var(--second-text-color);
+}
+
+.biografia a{
+    margin-top: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 400;
+}
+
+.semana_paulo_freire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.semana_paulo_freire img{
+    width: 35vw;
+
+}
+
+.semana_paulo_freire-content h2{
+
+    font-size: 4.7rem;
+    text-align: left;
+    line-height: 1.2;
+
+}
+.semana_paulo_freire p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    text-align: justify;
+    color: var(--second-text-color);
+}
+
+h2{
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Lora", serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--second-text-color);
+    
+    margin-bottom: 2rem; 
+}
+
+.etecamp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etecamp-img img{
+
+    margin-left: 8rem;
+    margin-top: 1.7rem;
+    width: 100%;
+}
+
+
+
+
+.etecamp-content h2{
+    margin-top: 5.4rem;
+    /* font-family: "Bebas Neue", sans-serif; */
+     font-family: "Rubik", sans-serif;
+    /* font-family: "Lora", serif; */
+    /* font-family: "Poppins", sans-serif; */
+    font-size: 4.7rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--second-text-color);
+}
+
+.etecamp-content p{
+    font-family: "Poppins", sans-serif;
+   font-size: 1.6rem;
+   text-align: justify;
+   color: var(--second-text-color);
+}
+
+.etecamp a{
+    margin-top: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 400;
+}
+
+
+

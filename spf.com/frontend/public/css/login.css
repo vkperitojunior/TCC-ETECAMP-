@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+
+    /* font-family: "Roboto", sans-serif; */
+    /* font-family: "Rubik", sans-serif;  */
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Lora", serif; */
+    /* font-family: "Noto Sans", sans-serif; */
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+
+.card-login {
+    width: 350px; 
+    padding: 20px; 
+}
+
+.card-login h1 {
+    font-size: 3.5rem; 
+}
+
+.textfield label {
+    font-size: 18px; 
+}
+
+.textfield label {
+    font-size: 18px; 
+}
+.card-login {
+    font-size: 18px; 
+    width: 300px; 
+}
+
+.form-control {
+    font-size: 16px; 
+}
+.btn-login {
+    font-size: 16px; 
+}
+
+.back-button {
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+.list-group-item {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+h1 {
+    font-size: 3.2rem; 
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1{
+    color: #FCB827;
+}
+
+.left-login-image{
+    width: 40vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1{
+    color: #FCB827;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;    
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #FCB827;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}

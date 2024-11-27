@@ -1,0 +1,231 @@
+section{
+
+    min-height: 100 vh;
+    padding: 10rem 9% 2rem;
+
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.cabecalho-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.cabecalho-img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -3.5rem;
+}
+
+.cabecalho-img img {
+    max-width: 1280px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: .9rem;
+    margin-left: 7rem;
+}
+
+
+.cabecalho-img h2 {
+    margin-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.dark-theme .cabecalho-img h2 {
+   
+    color: var(--second-text-color);
+   
+}
+
+
+.cabecalho-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.dark-theme .cabecalho-content h1 {
+    
+    color: var(--second-text-color);
+ 
+}
+
+
+.cabecalho-content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+.dark-theme .cabecalho-content p {
+    
+    color: var(--second-text-color);
+    
+}
+
+
+.criterios {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.criterios h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    color: var(--text-color);
+}
+
+.dark-theme .criterios h2 {
+  
+    color: var(--second-text-color);
+}
+
+.criterios .btn {
+    margin: 0;
+    padding: 10px 24px;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+.turma-campea {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 2rem;
+    
+}
+
+
+
+.turma-campea h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 1rem; 
+
+}
+
+
+.table {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.table th, .table td {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+h2{
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Lora", serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem; 
+}
+
+.dark-theme h2{
+    
+    color: var(--second-text-color);
+
+}
+
+h1{
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Lora", serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem; 
+}
+
+.dark-theme h1{
+   
+    color: var(--second-text-color);
+  
+}
+
+
+
+span{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+.cabecalho a{
+    margin-top: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 400;
+}
+
+h2{
+    /* font-family: "Rubik", sans-serif; */
+    /* font-family: "Lora", serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem; 
+}
+
+.dark-theme h2{
+  
+    color: var(--second-text-color);
+   
+}
+
+.dark-theme .cabecalho a{
+    color: var(--bg-color);
+}
+
+
+
+
