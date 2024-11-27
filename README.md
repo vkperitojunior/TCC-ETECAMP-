@@ -132,13 +132,25 @@ Instalação dependências específicas do Aplicativo
 1 - Instalar Node e npm na URL: https://nodejs.org/pt/download/package-manager
 2 - Instalar Ionic na URL: https://ionicframework.com/docs/intro/cli
 
+Alterações para funcionamento
 
-Alterações e Funcionando
+3 - Dentro do Visual Studio Code, abra o terminal integrado e crie um projeto ionic em branco com os seguintes comando:
 
-3 - Abrir VSC -> src/app/services/api.service.ts  -> Alterar para o IP da internet (O aplicativo roda utilizando o IP, que busca informações no site dentro do local host, e o site busca informações no Banco de Dados). Para saber o IP que está conectado o computador, digitar CMD na barra de pesquisa do Windows, e nele digitar "ipconfig". Utilizar o IP do "Endereço IPv4". e alterar na linha: "  private apiUrl = 'http://192.168.12.167/spf.com/backend/conexao/script/api.php';
-"
+ionic start meupp
 
-4 - Abrir terminal do Visual Studio Code, no CMD do terminal integrado digitar "ionic serve", vai abrir uma página no navegador.
+Nessa instrução, caso desejemos omitir o parâmetro template, por padrão será utilizado o template tabs. No entanto, se quisermos escolher um modelo pré-definido de aplicação, podemos informar, nesse argumento, um dos seguintes valores:
+
+Templates iniciais nomeados:
+tabs 
+sidemenu;
+blank. (Escolha esse!);
+
+4 - Após abrir um projeto em branco, baixe o a pasta do app_spf, descompacte, copie o src inteiro e cole dentro do projeto ionic que você acabou de abrir, substaituindo o src antigo.
+
+5 - Abrir Visual Studio Code -> src/app/services/api.service.ts  -> Alterar para o IP da internet (O aplicativo roda utilizando o IP, que busca informações no site dentro do local host, e o site busca informações no Banco de Dados). Para saber o IP que está conectado o computador, digitar CMD na barra de pesquisa do Windows, e nele digitar "ipconfig". Utilizar o IP do "Endereço IPv4". e alterar na linha: "  private apiUrl = 'http://192.168.12.167/spf.com/backend/conexao/script/api.php';"
+(O aplicativo depende das configurações e conteudos do website, sendo assim, o website é um pré requisito)
+
+6 - Abrir terminal do Visual Studio Code, no CMD do terminal integrado digitar "ionic serve", vai abrir uma página no navegador.
 
 <img src="Imagens_Readme/Exemplo_aplicativo1.jpg" alt="Exemplo do aplicativo 1">
 <img src="Imagens_Readme/Exemplo_aplicativo2.jpg" alt="Exemplo do aplicativo 2">
