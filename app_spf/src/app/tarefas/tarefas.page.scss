@@ -1,0 +1,279 @@
+body {
+  height: 100%; /* Define a altura total do corpo */
+  overflow: hidden; /* Impede rolagem fora do contêiner */
+  background-color: var(--ion-background-color); /* Cor de fundo definida pela variável */
+  color: var(--ion-text-color); /* Cor do texto definida pela variável */
+}
+
+.abrirEvoltar{
+  color: var(--icon-color);
+}
+
+.container {
+  display: flex; /* Usando Flexbox para layout */
+  flex-direction: column; /* Alinha os itens em coluna */
+  height: 100%; /* Preenche a altura total da tela */
+}
+
+ion-content {
+  padding: 16px; /* Espaçamento interno do conteúdo */
+  display: flex; /* Flexbox para layout interno */
+  flex-direction: column; /* Permite que o conteúdo se empilhe verticalmente */
+  overflow: auto; /* Permite rolagem no conteúdo */
+}
+
+.date-button-container {
+  display: flex; /* Usando Flexbox para layout dos botões de data */
+  justify-content: space-between; /* Alinha itens horizontalmente com espaço entre eles */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 8px; /* Espaçamento acima do container */
+  min-height: 56px; /* Impede que o container encolha quando a mensagem de erro aparece */
+}
+
+.error-message {
+  color: rgb(255, 104, 104); /* Cor da mensagem de erro */
+  font-size: 14px; /* Tamanho da fonte para a mensagem */
+  margin-top: 4px; /* Espaço acima da mensagem de erro */
+  margin-left: 8px; /* Alinha a mensagem com o campo de data */
+  display: block; /* Faz a mensagem ocupar uma nova linha */
+}
+
+.task-item {
+  flex: 1; /* Faz o item da tarefa ocupar o espaço restante */
+  margin-right: 8px; /* Espaçamento à direita do item da tarefa */
+}
+
+.button-container {
+  margin-right: 20px; /* Espaçamento à direita dos botões */
+  flex-shrink: 0; /* Impede que o botão encolha */
+}
+
+.date-item {
+  ion-input {
+    &::placeholder {
+      color: gray; /* Cor do texto do placeholder */
+      opacity: 1; /* Assegura que o placeholder seja totalmente visível */
+    }
+  }
+}
+
+.filter-container {
+  display: flex; /* Usando Flexbox para layout dos filtros */
+  justify-content: space-between; /* Alinha itens com espaço entre eles */
+  align-items: center; /* Alinha verticalmente os itens */
+  margin-bottom: 40px; /* Espaço abaixo do container de filtros */
+  margin-top: 30px; /* Espaço acima do container de filtros */
+
+  .toggle {
+    display: flex; /* Layout horizontal para os toggles */
+    gap: 16px; /* Espaçamento entre os toggles */
+
+    .toggle-switch {
+      display: flex; /* Usando Flexbox para o switch */
+      align-items: center; /* Centraliza os itens verticalmente */
+      cursor: pointer; /* Muda o cursor para indicar interatividade */
+      position: relative; /* Posicionamento relativo para animações */
+      transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+      border: 1px solid rgb(0, 0, 0); /* Borda do switch */
+      border-radius: 30px; /* Bordas arredondadas para o switch */
+
+      .switch-circle {
+        width: 18px; /* Largura do círculo do switch */
+        height: 18px; /* Altura do círculo do switch */
+        border-radius: 50%; /* Círculo perfeito */
+        background-color: black; /* Cor de fundo do círculo */
+        border: 2px solid var(--ion-button-background); /* Borda do círculo */
+        transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+        margin-right: 8px; /* Espaçamento à direita do círculo */
+
+        &.active {
+          background-color: var(--ion-button-background); /* Cor do círculo ativo */
+          transform: translateX(21px); /* Move o círculo para a direita quando ativo */
+        }
+      }
+    }
+  }
+
+  ion-button {
+    margin-left: auto; /* Move o botão para a direita */
+    display: flex; /* Usando Flexbox para alinhamento */
+    align-items: center; /* Centraliza verticalmente */
+  }
+
+  ion-icon {
+    font-size: 30px; /* Aumenta o tamanho do ícone */
+  }
+}
+
+
+.config-menu {
+  position: absolute; /* Permite posicionar em relação ao contêiner pai */
+  top: 220px; /* Distância do topo */
+  right: 0px; /* Distância da direita */
+  background-color: var(--ion-background-color2); /* Fundo branco para destacar */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+  padding: 16px; /* Espaçamento interno */
+  z-index: 10; /* Garante que apareça acima de outros elementos */
+
+  .header {
+    display: flex; /* Usando Flexbox para alinhar */
+    justify-content: space-between; /* Espaço entre o título e o botão */
+    align-items: center; /* Alinha verticalmente */
+    margin-bottom: 10px; /* Espaçamento abaixo do cabeçalho */
+  }
+
+  h3 {
+    margin: 0; /* Remove margens */
+    font-size: 18px; /* Tamanho da fonte do título */
+  }
+
+  .opcoes {
+    ion-item {
+      cursor: pointer; /* Permite clicar em qualquer lugar do item */
+      display: flex; /* Usando Flexbox para alinhamento */
+      justify-content: space-between; /* Espaço entre o texto e o checkbox */
+      --background: transparent; /* Fundo transparente para itens */
+      --ion-color-primary: #3880ff; /* Cor do texto do item */
+      
+      &.highlighted {
+        background-color: rgba(56, 128, 255, 0.1); /* Fundo destacado ao passar o mouse */
+      }
+    }
+  }
+}
+
+
+ion-list {
+  margin-top: 16px; /* Espaçamento acima da lista */
+
+  ion-item {
+    margin-bottom: 8px; /* Espaçamento abaixo de cada item da lista */
+    display: flex; /* Usando Flexbox para alinhamento */
+    align-items: center; /* Alinha itens verticalmente */
+
+    .status-indicator {
+      width: 12px; /* Largura do indicador de status */
+      height: 12px; /* Altura do indicador de status */
+      border-radius: 50%; /* Círculo perfeito para o indicador */
+      margin-right: 8px; /* Espaço à direita do indicador */
+    }
+
+    .task-label {
+      flex: 1; /* Ocupa o espaço restante */
+      overflow: hidden; /* Esconde conteúdo que excede o espaço */
+      white-space: nowrap; /* Não quebra a linha */
+      text-overflow: ellipsis; /* Adiciona reticências para texto longo */
+
+      .task-due-date {
+        font-size: 12px; /* Tamanho pequeno para a data */
+        color: gray; /* Cor para a data */
+        margin: 0; /* Remove margens */
+      }
+
+      h2 {
+        margin: 0; /* Remove margens */
+        overflow: hidden; /* Esconde conteúdo que excede o espaço */
+        white-space: nowrap; /* Não quebra a linha */
+        text-overflow: ellipsis; /* Adiciona reticências para texto longo */
+      }
+
+      p {
+        margin: 0; /* Remove margens */
+        overflow: hidden; /* Esconde conteúdo que excede o espaço */
+        white-space: nowrap; /* Não quebra a linha */
+        text-overflow: ellipsis; /* Adiciona reticências para texto longo */
+      }
+    }
+
+    .button-container {
+      display: flex; /* Usando Flexbox para alinhamento dos botões */
+      flex-direction: row; /* Alinha os botões em linha */
+      gap: 4px; /* Espaçamento entre os botões */
+
+      ion-button {
+        margin-left: 4px; /* Espaçamento à esquerda do botão */
+      }
+    }
+  }
+}
+
+// Cores dos estados das tarefas
+.AFazer {
+  background-color: #ff0000; /* Cor para tarefas a fazer */
+}
+
+.emAndamento {
+  background-color: #ffff00; /* Cor para tarefas em andamento */
+}
+
+.finalizada {
+  background-color: #008000; /* Cor para tarefas finalizadas */
+}
+
+// Animação para o botão do switch
+.toggle-switch {
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transições suaves para animações */
+  will-change: transform; /* Ajuda a otimizar animações */
+  
+}
+
+.bounce {
+  animation: bounce 0.3s forwards; /* Animação de 'bounce' com manutenção do estado final */
+}
+
+.bounceDown {
+  animation: bounceDown 0.3s forwards; /* Animação de 'bounceDown' com manutenção do estado final */
+}
+
+@keyframes bounceDown {
+  0%, 100% {
+      transform: translateY(0); /* Estado inicial e final na posição original */
+  }
+  50% {
+      transform: translateY(15px); /* Move para baixo durante a animação */
+  }
+}
+
+// Nova animação para subida
+.bounceUp {
+  animation: bounceUp 0.3s forwards; /* Animação de 'bounceUp' */
+}
+
+@keyframes bounceUp {
+  0%, 100% {
+      transform: translateY(0); /* Estado inicial e final na posição original */
+  }
+  50% {
+      transform: translateY(-15px); /* Move para cima durante a animação */
+  }
+}
+
+.scroll-icon {
+  position: fixed; /* Fica fixo na tela */
+  bottom: 20px; /* Distância do fundo da tela */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a centralização */
+  z-index: 100; /* Garante que fique acima de outros elementos */
+  background-color: #202020; /* Cinza escuro */
+  border-radius: 50%; /* Ícone arredondado */
+  width: 40px; /* Largura do ícone */
+  height: 40px; /* Altura do ícone */
+  display: flex; /* Para centralizar o ícone */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+  transition: background-color 0.3s, transform 0.3s; /* Efeito de transição suave */
+}
+
+.scroll-icon:hover {
+  background-color: #666; /* Cor de fundo ao passar o mouse */
+  border: 2px solid rgb(206, 206, 206);
+}
+
+.scroll-icon ion-icon {
+  color: white; /* Cor branca para a seta */
+  font-size: 20px; /* Tamanho do ícone */
+}
+
+

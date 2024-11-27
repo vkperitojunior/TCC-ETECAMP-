@@ -1,0 +1,160 @@
+:root {
+  --ion-color-primary: #1e90ff;
+  --ion-color-secondary: #444;
+  --ion-color-tertiary: #666;
+  --ion-background-color: #000000;
+  --ion-background-color2: #252525;
+  --ion-text-color: #ffffff;
+  --ion-card-background: #1b1b1b;
+  --ion-card-header-background: #1e90ff;
+  --ion-card-header-text-color: #ffffff;
+  --ion-toolbar-background: #222;
+  --ion-toolbar-text-color: #e0e0e0;
+  --ion-intro-text-text-color: #ffffff;
+  --ion-button-background: #1e90ff;
+  --ion-button-color: #ffffff;
+  --ion-button-hover-background: #1c86ee;
+  --intro-card-text-color: #ffffff;
+  --intro-title-color: #ffffff;
+  --ion-toolbar-background2: #1b1b1b;
+  --icon-color: #ffffff;
+  --button-background: #1e90ff;
+}
+
+[data-theme='dark'] {
+  --ion-color-primary: #1e90ff;
+  --ion-color-secondary: #ff6347;
+  --ion-color-tertiary: #32cd32;
+  --ion-background-color: #dbdbdb;
+  --ion-background-color2: #ffffff;
+  --ion-text-color: #333;
+  --ion-card-background: #ffffff;
+  --ion-card-header-background: #1e90ff;
+  --ion-card-header-text-color: #333;
+  --ion-toolbar-background: #1e90ff;
+  --ion-toolbar-text-color: #ffffff;
+  --ion-intro-text-text-color: #000000;
+  --ion-button-background: #1e90ff;
+  --ion-button-color: #ffffff;
+  --ion-button-hover-background: #1c86ee;
+  --intro-card-text-color: #333;
+  --intro-title-color: #000000;
+  --ion-toolbar-background2: #f6f6f6;
+  --icon-color: #333333;
+  --button-background: #333333;
+}
+
+
+
+#main-content {
+  background-color: var(--button-background);
+  transition: background-color 0.5s ease;
+}
+
+body {
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+ion-menu {
+  transition: transform 0.4s cubic-bezier(0.25, 1.5, 0.5, 1), opacity 0.4s ease;
+}
+
+ion-menu[hidden] {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+ion-menu[open] {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+ion-menu::part(backdrop) {
+  background-color: rgba(13, 77, 255, 0.934);
+  transition: background-color 0.3s ease;
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0px 14px rgb(15, 183, 255);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.toggle-container {
+  margin-bottom: 20px;
+}
+
+.dark-mode-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--ion-button-background);
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ion-button-background);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: rgba(30, 144, 255, 0.1);
+    transform: scale(1.05);
+  }
+}
+
+/* Adicione isso ao seu app.component.scss */
+
+.dark-mode-text {
+  color: rgb(0, 0, 0); // Cor do texto no modo escuro
+}
+
+.light-mode-text {
+  color: rgb(255, 255, 255); // Cor do texto no modo claro
+}
+
+.navigate-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+.toggle-switch {
+  width: 50px;
+  height: 25px;
+  background-color: #999999;
+  border-radius: 25px;
+  position: relative;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+
+  &.active {
+    background-color: #007bff;
+  }
+
+  .switch-circle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  &.active .switch-circle {
+    transform: translateX(25px);
+  }
+}
+

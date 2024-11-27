@@ -1,0 +1,104 @@
+<body>
+  <div class="container">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button (click)="goHome()">
+            <ion-icon class="abrirEvoltar" name="arrow-back"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title>Minhas Tarefas</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <div class="task-input-container">
+        <ion-item class="task-item">
+          <ion-label position="floating">Título da Tarefa</ion-label>
+          <ion-input [(ngModel)]="newTask" (ionInput)="clearError()" maxlength="25"></ion-input>
+        </ion-item>
+        
+        <!-- Mensagem de erro para título -->
+        <div *ngIf="error.startsWith('Título')" class="error-message">{{ error }}</div>
+        
+        <div class="date-button-container">
+          <ion-item class="task-item date-item">
+            <ion-label position="floating">Data de Vencimento</ion-label>
+            <ion-input 
+              [(ngModel)]="dueDate" 
+              (keyup)="formatInput($event)" 
+              (ionFocus)="clearError()">
+            </ion-input>
+          </ion-item>
+
+          <div class="button-container">
+            <ion-button class="add-button" (click)="addTask()">Adicionar</ion-button>
+          </div>
+        </div>
+        <div *ngIf="error.startsWith('Data')" class="error-message">{{ error }}</div>
+      </div>
+      
+      <div class="filter-container" style="display: flex; flex-direction: inline;">
+        <div class="toggle">
+          <div class="toggle-switch" (click)="toggleColorFilter('AFazer')"
+            [ngStyle]="{'background-color': selectedFilters.includes('AFazer') ? 'rgba(255, 0, 0, 0.5)' : 'lightgray'}">
+            <div class="switch-circle" [ngClass]="{'active': selectedFilters.includes('AFazer')}"></div>
+          </div>
+          <div class="toggle-switch" (click)="toggleColorFilter('emAndamento')"
+            [ngStyle]="{'background-color': selectedFilters.includes('emAndamento') ? 'rgba(255, 255, 0, 0.5)' : 'lightgray'}">
+            <div class="switch-circle" [ngClass]="{'active': selectedFilters.includes('emAndamento')}"></div>
+          </div>
+          <div class="toggle-switch" (click)="toggleColorFilter('finalizada')"
+            [ngStyle]="{'background-color': selectedFilters.includes('finalizada') ? 'rgba(0, 255, 0, 0.5)' : 'lightgray'}">
+            <div class="switch-circle" [ngClass]="{'active': selectedFilters.includes('finalizada')}"></div>
+          </div>
+        </div>
+        <ion-buttons style="align-self: flex-end; margin-right: 30px;">
+          <ion-button (click)="toggleConfigMenu()" fill="clear">
+            <ion-icon name="cog"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+      
+      <div *ngIf="showConfigMenu" class="config-menu">
+        <div class="header">
+          <h3>Filtro específico</h3>
+          <ion-button fill="clear" (click)="toggleConfigMenu()">
+            <ion-icon name="close"></ion-icon>
+          </ion-button>
+        </div>
+        <div class="opcoes" *ngFor="let filter of ['Hoje', 'Próximos 7 dias', 'Retroativo']" (click)="toggleFilter(filter)">
+          <ion-item>
+            <ion-label class="filter-label">{{ filter | titlecase }}</ion-label>
+            <ion-checkbox slot="end" [checked]="selectedFilters.includes(filter)"></ion-checkbox>
+          </ion-item>
+        </div>
+      </div>
+      
+      
+      
+
+      <ion-list>
+          <ion-item *ngFor="let task of filteredTasks()" class="task-item">
+
+            <div class="status-indicator" [ngClass]="getStatusClass(task.category)"></div>
+            <ion-label class="task-label">
+              <p class="task-due-date">{{ task.dueDate }}</p>
+              <h2 class="task-title">{{ task.name }}</h2>
+              <p>Estado: {{ formatTaskCategory(task.category) }}</p>
+            </ion-label>
+            <div class="button-container">
+              <ion-button (click)="editTask(task)" class="edit-button">Alterar</ion-button>
+              <ion-button fill="clear" (click)="deleteTask(task)">Excluir</ion-button>
+            </div>
+          </ion-item>
+      </ion-list>
+
+      <div class="scroll-icon" (click)="scrollToBottom()">
+        <ion-icon name="arrow-down"></ion-icon>
+      </div>
+      
+
+    </ion-content>
+  </div>
+</body>
