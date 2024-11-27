@@ -1,0 +1,16 @@
+Por conta do tamanho e da complexidade de carregar as extensões do site, preferimos relatar as versões e pedir
+ao usuário que baixasse e colocasse-as na pasta extensions para facilitar a execução do site.
+
+
+-> EXTENSÕES/PACOTES:
+
+- PhpMailer Versão 6.9.1
+- PSR-4_Autoloader
+- SimpleXLXSGEN
+- DomPDF
+- Composer
+- AltoRouter
+- GEOIP2-php
+- PHPLOT
+- PHPOFFICE
+- Maxmind geolite2
