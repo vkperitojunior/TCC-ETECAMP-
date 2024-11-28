@@ -20,7 +20,7 @@ canto e muitas outras atrações, onde comemoramos o dia de nosso querido educad
 pode mudar vidas, caminhos e seu ensino deve ser uma sala de debates e conversas multiplas entre o aluno e o professor, que não sabe de tudo e sim compartilha o conhecimento concebido em seus estudos 
 diarios.
 
-Nesta semana temos competições por pontos em gincanas e outras brincadeiras que sempre incluem o querido Paulo Freire no meio da história, sendo assim, cada sala, ao compeltar uma parte da competição
+Nesta semana temos competições por pontos em gincanas e outras brincadeiras que sempre incluem o querido Paulo Freire no meio da história, sendo assim, cada sala, ao completar uma parte da competição
 recebe uma quantidade de pontos que vem de jurados de fora da escola, para que os pontos não fiquem inviesados, assim, todos temos garra para participar e competir olhando para nossa educação, colegas 
 e o mais importante, diferentes jeitos de aprendizado!
 
