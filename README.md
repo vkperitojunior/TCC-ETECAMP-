@@ -10,7 +10,7 @@ Mateus Araujo da Silva.
 
 Orientadores:
 Thaynara Andrade e
-Barbara porphirio
+Barbara Porfirio.
 
 ## Como começamos e qual nosso objetivo: ☕️
 
