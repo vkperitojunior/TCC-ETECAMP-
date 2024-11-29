@@ -69,6 +69,7 @@ ao usuário que baixasse e colocasse-as na pasta extensions para facilitar a exe
 -> EXTENSÕES/PACOTES:
 
 - Firebase Versão 13.19.0
+- ng2-charts
 - Chart Versão 4.4.4
 
 ###  Linguagens usadas no dedurator: 🕹️
